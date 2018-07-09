@@ -1,0 +1,39 @@
+
+
+
+.header{
+    .w(2048);.h(128);.lh(128);.fixed;.top(0);.left(0);.right(0);
+    .cfff;.fs(48);
+    text-align: center;
+    background-image: url("../images/dingbu@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    #logo{
+      .absolute;
+      .w(224);.h(67);
+      .left(30);.mt(30);
+    }
+  }
+ .content{
+    .w(2048);.h(1408);
+    display: flex;flex-direction: row;
+    .nav{
+      .w(360);.h(1408);.pt(36);.fixed;.top(128);.bottom(0);.left(0);
+      background-image: url("../images/cedaohang@2x.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      .item{
+        .w(360);.h(89);.mb(22);color: white;
+        img{.w(280);.h(89);.ml(40);display: block}
+      }
+      .active{
+        background-color: rgb(35,76,10);
+      }
+    }
+    #iframe{
+      .w(1688);.h(1408);
+      background-color: rgb(238,238,238);
+     .ml(360);.mt(128);
+    }
+  }
+

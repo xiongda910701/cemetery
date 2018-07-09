@@ -1,0 +1,1 @@
+$(".nav li").on("click",function(){var t=$(this).attr("data-src"),i=$(this).find("img")[0];$(i).attr("src","../images/"+t+"_active.png");$(this).siblings().forEach(function(t){var i=$(t).find("img")[0],a=$(i).attr("src").replace("_active","");$(i).attr("src",a)}),"mxtj"==t?parent.location.href="../view/sort.html":$("#iframe").attr("src",t+".html")});

@@ -1,0 +1,44 @@
+.detail-page{
+  .w(2048);
+  .detail-page-header{
+    .w(2048);.h(128);.lh(128);
+    text-align: center;.cfff;.fs(48);.relative;
+    background-image: url("../images/dingbu@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .back-box{
+      .absolute;.w(200);.h(128);.lh(128);.top(0);.left(30);text-align: left;
+      a{display: block;}
+      img{.w(26);.h(44);}
+    }
+  }
+  .commom-box{
+    display: flex;flex-direction: row;
+    .w(2048);.pt(60);.pr(60);.pb(80);.pl(60);
+    img{.w(600);.h(600);}
+    .right-box{
+      .pl(50);
+      .name{.mt(20);.fs(48);.c31;}
+      .type-box{.mt(180);.fs(36);.c333;}
+      .price-box{
+        .mt(85);.fs(36);
+        .text{.fs(36);.c31;}
+        .price{.fs(32);color: red;}
+      }
+    }
+  }
+  .introduce-box{
+    .pr(60);.pb(60);.pl(60);.fs(34);.c333;
+    .title{
+      border-bottom: 2px solid rgb(0,128,0);.h(60);.relative;
+      img{.lh(60);.w(411);}
+      span{
+        display: inline-block;.h(60);.lh(60);.w(240);.absolute;.left(0);.top(0);
+        text-align: center;.fs(36);.cfff;
+      }
+    }
+    .text{
+      .mt(38);.ml(30);
+    }
+  }
+}

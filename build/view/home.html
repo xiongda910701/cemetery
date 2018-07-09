@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="home-page">
+    <ul class="list" id="list"></ul>
+    <div class="page-box"></div>
+    <div class="page-box"><div id="page"></div></div>
+</div>
+
+
+<!--列表模板开始-->
+<script type="text/html" id="template-list">
+    {{each list as item index}}
+    <li class="item">
+        <a href="detail.html?id={{item.id}}" target="_parent">
+            <img src="{{item.imagePath}}" alt="">
+            <div class="name">{{item.name}}</div>
+            <div class="info">
+                <span class="price">￥{{item.price}}</span>
+                <button type="button" class="btn">查看详情</button>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<!--列表模板结束-->
+
+</body>
+<script src="../vendor/zepto/zepto.min.js"></script>
+<script src="../vendor/page/page.js"></script>
+<script src="../vendor/template/template.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/home.js"></script>
+</html>

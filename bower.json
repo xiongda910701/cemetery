@@ -1,0 +1,26 @@
+{
+  "name": "wechat",
+  "authors": [
+    "xiongda <962008509@qq.com>"
+  ],
+  "description": "wechat",
+  "main": "",
+  "keywords": [
+    "wechat"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "template": "^0.2.0",
+    "swiper": "^4.0.5",
+    "zepto": "^1.2.0"
+  }
+}

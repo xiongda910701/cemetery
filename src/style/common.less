@@ -1,0 +1,236 @@
+
+/*定义基础样式*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f3f3;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "微软雅黑", "Times New Roman", Georgia, Serif;
+  }
+  a {
+    text-decoration: none;
+  }
+  li {
+    list-style-type: none;
+  }
+
+  /*清除输入框聚焦黄色边框、黄色背景以及placehold样式*/
+  input:focus{
+    border-color: white;
+    outline: 0;
+  }
+  ::-webkit-input-placeholder{
+    .fs(14);
+    /*.text-indent(10);*/
+  }
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+    .fs(13);
+  }
+}
+
+
+/*定义长度单位样式*/
+.fs(@px) {
+  font-size: unit(@px/204.8, rem);
+}
+.bgsize(@px,@px) {
+  background-size: unit(@px/204.8, rem) unit(@px/204.8, rem);
+}
+.w(@px) {
+  width: unit(@px/204.8, rem);
+}
+.mw(@px) {
+  min-width: unit(@px/204.8, rem);
+}
+
+.h(@px) {
+  height: unit(@px/204.8, rem);
+}
+.mh(@px) {
+  min-height: unit(@px/204.8, rem);
+}
+
+.lh(@px) {
+  line-height: unit(@px/204.8, rem);
+}
+
+
+.m(@px){
+  margin-left: unit(@px/204.8, rem);
+  margin-right: unit(@px/204.8, rem);
+  margin-top: unit(@px/204.8, rem);
+  margin-bottom: unit(@px/204.8, rem);
+}
+
+.ml(@px) {
+  margin-left: unit(@px/204.8, rem);
+}
+
+.mr(@px) {
+  margin-right: unit(@px/204.8, rem);
+}
+
+.mt(@px) {
+  margin-top: unit(@px/204.8, rem);
+}
+
+.mb(@px) {
+  margin-bottom: unit(@px/204.8, rem);
+}
+
+
+.p(@px){
+  padding-left: unit(@px/204.8, rem);
+  padding-right: unit(@px/204.8, rem);
+  padding-top: unit(@px/204.8, rem);
+  padding-bottom: unit(@px/204.8, rem);
+}
+.p(@px){
+  padding: unit(@px/204.8, rem);
+}
+.pl(@px) {
+  padding-left: unit(@px/204.8, rem);
+}
+
+.pr(@px) {
+  padding-right: unit(@px/204.8, rem);
+}
+
+.fs(@px) {
+  font-size: unit(@px/204.8, rem);
+}
+
+.pt(@px) {
+  padding-top: unit(@px/204.8, rem);
+}
+
+.pb(@px) {
+  padding-bottom: unit(@px/204.8, rem);
+}
+
+.left(@px) {
+  left: unit(@px/204.8, rem);
+}
+
+.right(@px) {
+  right: unit(@px/204.8, rem);
+}
+
+.top(@px) {
+  top: unit(@px/204.8, rem);
+}
+
+.bottom(@px) {
+  bottom: unit(@px/204.8, rem);
+}
+.text-indent(@px){
+  text-indent: unit(@px/204.8, rem);
+}
+.backgroundSize(@px){
+  background-size: unit(@px/204.8, rem) unit(@px/204.8, rem);
+}
+
+
+
+
+/*定义浮动/清除浮动样式*/
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+/*定义对齐方式样式*/
+.text-l {
+  text-align: left;
+}
+
+.text-c {
+  text-align: center;
+}
+
+.text-r {
+  text-align: right;
+}
+
+.vertical-t {
+  vertical-align: top;
+}
+
+.vertical-m {
+  vertical-align: middle;
+}
+
+.vertical-b {
+  vertical-align: bottom;
+}
+
+
+/*定义定位样式*/
+.absolute{
+  position: absolute;
+}
+.relative{
+  position: relative;
+}
+.fixed{
+  position: fixed;
+}
+
+
+
+/*定义颜色样式*/
+.c31 {
+  color: #313131;
+}
+.c333 {
+  color: #333333;
+}
+.c666 {
+  color: #666666;
+}
+.cfff {
+  color: #fff;
+}
+.cRed{
+  color: red;
+}
+
+/*定义背景色样式*/
+.bgcf5f5f5 {
+  background-color: #f5f5f5;
+}
+
+.bgcfff{
+  background-color: #fff;
+}
+.bgcec{
+  background-color: #ececec;
+}
+
+
+/*定义透明度样式*/
+.filter50{
+  background:rgba(0,0,0,0.5);
+}
+
+.line2{
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+  -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+  -webkit-line-clamp: 2; /** 显示的行数 **/
+  overflow: hidden;  /** 隐藏超出的内容 **/
+}
+
+

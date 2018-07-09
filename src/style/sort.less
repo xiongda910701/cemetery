@@ -1,0 +1,45 @@
+.sort-page{
+  .w(2048);
+  .sort-page-header{
+    .w(2048);.h(128);.lh(128);
+    text-align: center;.cfff;.fs(48);.relative;
+    background-image: url("../images/dingbu@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .back-box{
+      .absolute;.w(200);.h(128);.lh(128);.top(0);.left(30);text-align: left;
+      a{display: block;}
+      img{.w(26);.h(44);}
+    }
+  }
+  .sort-info-box{
+    .pt(50);.pb(10);.pl(80);.pr(80);.bgcfff;.fs(32);overflow: hidden;
+    .item{
+      .h(50);.lh(50);display: flex;flex-direction: row;.mb(40);
+      .name{.h(50);.lh(50);.pl(20);.pr(20);background-color: rgb(0,128,0);border-radius: 10px;.cfff;.fs(28);}
+      .list{
+        span{
+          .h(50);.lh(50);.pl(20);.pr(20);border-radius: 10px;.cfff;.c31;display: inline-block;.fs(28);
+          &:hover{cursor: pointer;}
+        }
+        .active{border-radius: 10px;.cfff;.fs(24);background-color: rgb(0,128,0);.fs(28);}
+      }
+    }
+  }
+  #list{
+    .pl(80);.pt(80);.pr(24);.fs(28);.c31;overflow: hidden;
+    .item{
+      a{display: block;.c333;}
+      .w(430);.h(560);.bgcfff; .fl;.mr(56);.mb(50);
+      img{.w(430);.h(400);}
+      .name{text-align: center;.mt(5);}
+      .area,.price-box{.text-indent(20);.mt(10);}
+      .price{color: red;}
+    }
+  }
+
+  .page-box{
+    text-align: center;.w(2048); .mb(80);height: auto;
+    #page{clear: both;display: inline-block;}
+  }
+}

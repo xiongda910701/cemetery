@@ -1,0 +1,117 @@
+#select-page{
+  #title{
+    .fixed;.top(0);.left(0);z-index: 100;
+    .w(2048);.h(128);.lh(128);
+    text-align: center;.cfff;.fs(48);
+    background-image: url("../images/dingbu@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .back-box{
+      .absolute;.w(200);.h(128);.lh(128);.top(0);.left(30);text-align: left;
+      a{display: block;}
+      img{.w(26);.h(44);}
+    }
+  }
+
+
+  #header{
+    .fixed;.top(128);z-index: 100;
+    .w(2048);.h(98);.lh(98);.pl(36);.pr(36);.fs(32);
+    .c333;.bgcf5f5f5;
+    .item{
+      float: left;.mr(60);.relative;
+      img{.w(40);.h(44);.absolute;.top(18);}
+      span{.ml(56);}
+    }
+    .info{
+      .fs(32);.ml(120);.fl;
+      #number{.ml(20);.mr(10);}
+      #price{.cRed;}
+    }
+  }
+
+
+  #content{
+    .h(1212);.pl(30);.pt(40);.bgcfff;.relative;width: 100%;.mb(98);.mt(226);
+    overflow: scroll;
+    .item{
+      .h(158);.pt(12);
+      .left{
+        .w(50);.fs(32);.fl; .h(158);.lh(124);.text-c;.cfff; background-color: rgb(173,173,173);
+      }
+      .right{
+        .h(158);.lh(158);.fl;.fs(24);.c333;.ml(46);
+        .item{
+          .fl;.w(204);
+          img{.w(88);.h(88);display: block;}
+          p{.h(46);.lh(46);}
+        }
+      }
+    }
+  }
+
+
+  #footer{
+    .h(98);.text-c;.fs(32);.bgcfff;.fixed;.bottom(0);.w(2048);
+    #btn{
+      .w(360);.h(72);background-color: rgb(0,128,0);.cfff;.fs(32);.mt(13);
+      border: 1px solid rgb(0,128,0);border-radius: 3px;
+    }
+    .disabledState{
+      background-color: #ececec!important;
+      border: none !important;
+    }
+  }
+}
+
+
+/*弹窗样式*/
+#window_box{
+  position: fixed;z-index: 100; display: none;
+  .top(0);.left(0);
+  .w(2048);.h(1536);.fs(32);
+  background-color: rgba(0,0,0,0.5);
+  .close{
+    .w(780);.h(60);margin: 0 auto;
+    text-align: right;.mt(160);
+    .pr(20);.relative;
+    &:after{
+      content: "";
+      .absolute;
+      display: block;.w(6);.h(120);.bgcfff;
+      .right(45);
+    }
+    img{.w(60);.h(60);}
+  }
+  #form{
+    z-index: 200;
+    .w(800);.h(600);.pt(80);.pb(40);
+    background-color: white;margin: 0 auto;
+    .mt(120);border-radius: 8%;
+    .item{
+      .w(680);.h(72);.lh(72);.ml(60);.mb(40);
+      border: 1px solid #e2e2e2;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: row;
+      span{.fs(32);.c333;.ml(20);.mr(40);}
+      input{
+        flex: 1;border: none;
+        .fs(30);.c666;
+        .mr(15);
+      }
+    }
+    #btn_submit{
+      .w(600);.h(80);.lh(80);
+      .mt(40);.ml(100);
+      text-align: center;
+      background-color: rgb(119,194,95);
+      .cfff;.fs(36);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}
+
+

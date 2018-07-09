@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"><title>业务查询</title><link rel="shortcut icon" href="../favicon.ico"><link rel="stylesheet" href="../css/style.css"></head><body><div class="business-page"><div class="search-box"><div class="item text">时刻表：</div><div class="item toggle"><span class="left active" data-type="0">礼仪</span> <span class="right" data-type="1">火化</span></div><div class="item text date-text">日期：</div><div class="item date-box" id="date-box"><span class="text-show" id="text-show"></span> <img src="../images/jtx2x.png" alt="" class="icon-select"><ul class="list" id="date-list"><script type="text/html" id="date-list-template">{{each list as item}}
+                        <li class="item">{{item}}</li>
+                    {{/each}}</script></ul></div></div><div id="table-box"><div class="table-title"><div class="item-th line-one"></div><div class="item-th">第一场</div><div class="item-th">第二场</div><div class="item-th">第三场</div><div class="item-th">第四场</div><div class="item-th">第五场</div><div class="item-th">第六场</div></div><div class="table-content" id="table-content"></div></div></div><script type="text/html" id="list-template">{{each list as item index}}
+    <div class="item">
+        <div class="item-td line-one">{{item.name}}</div>
+        <div class="item-td">{{item.one}}</div>
+        <div class="item-td">{{item.two}}</div>
+        <div class="item-td">{{item.three}}</div>
+        <div class="item-td">{{item.four}}</div>
+        <div class="item-td">{{item.five}}</div>
+        <div class="item-td">{{item.six}}</div>
+    </div>
+    {{/each}}</script></body><script src="../vendor/zepto/zepto.min.js"></script><script src="../vendor/template/template.js"></script><script src="../vendor/page/page.js"></script><script src="../js/common.js"></script><script src="../js/businessQuery.js"></script></html>

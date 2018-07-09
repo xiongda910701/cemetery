@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+    <title>墓型分类</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="sort-page">
+    <div class="sort-page-header">
+        <span class="title">推荐墓型</span>
+        <div class="back-box"><a href="javascript:history.go(-1)"><img src="../images/back.png" alt=""></a></div>
+    </div>
+    <div class="sort-info-box"><!--分类信息开始-->
+        <div class="item name-box"><span>名称：</span><span class="name">测试名称</span></div>
+        <div class="item type-box">
+            <div class="left">类型：</div>
+            <div class="list" id="type-list">
+                <script type="text/html" id="type-list-template">
+                    {{each list as item}}
+                        <span>{{item.typeName}}</span>
+                    {{/each}}
+                </script>
+            </div>
+        </div>
+        <div class="item price-box">
+            <div class="left">价格：</div>
+            <div class="list" id="price-list">
+                <script type="text/html" id="price-list-template">
+                    {{each list as item}}
+                    <span>{{item.price}}</span>
+                    {{/each}}
+                </script>
+            </div>
+        </div>
+    </div><!--分类信息结束-->
+
+    <ul id="list"></ul>
+    <div class="page-box"><div id="page"></div></div>
+</div>
+
+
+<!--列表数据模板-->
+<script type="text/html" id="list-template">
+    {{each list as item}}
+    <li class="item">
+        <a href="select.html?id={{item.id}}" target="_parent">
+            <img src="{{item.imagePath}}" alt=""/>
+            <p class="name">{{item.name}}</p>
+            <p class="area"><span class="key">区间：</span><span>{{item.areaName}}</span></p>
+            <div class="price-box"><span class="key">价格：</span><span class="price">￥{{item.price}}</span></div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+</body>
+<script src="../vendor/zepto/zepto.min.js"></script>
+<script src="../vendor/page/page.js"></script>
+<script src="../vendor/template/template.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/sort.js"></script>
+</html>

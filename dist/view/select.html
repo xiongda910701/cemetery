@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"><title>选择墓型</title><link rel="shortcut icon" href="../favicon.ico"><link rel="stylesheet" href="../css/style.css"></head><body><div id="select-page" class="print"><div id="title"><span class="title">翡翠园FC-458</span><div class="back-box"><a href="javascript:history.go(-1)"><img src="../images/back.png" alt=""></a></div></div><div id="header"><div class="item"><img src="../images/noSell.png" alt=""><span>可选</span></div><div class="item"><img src="../images/hasSell.png" alt=""><span>已售</span></div><div class="item"><img src="../images/hasBook.png" alt=""><span>已预订</span></div><div class="item"><img src="../images/select.png" alt=""><span>选中</span></div><div class="info"><span>已选:</span><span id="name"></span><span id="price"></span></div></div><ul id="content"></ul><div id="footer"><button type="button" id="btn">预约看慕</button></div></div><div id="window_box"><div class="close"><img src="./../images/cha@2x.png" alt="" id="btn_close"></div><div id="form"><div class="item name_box"><span>姓名</span><input type="text" id="user_name"></div><div class="item"><span>电话</span><input type="tel" id="user_phone"></div><div class="item"><span>预约时间</span><input type="date" id="book_date"></div><div id="btn_submit">确认提交</div></div></div><script id="parentTemplate" type="text/html">{{each data as item}}
+    <li class="item item_1">
+        <div class="left">{{item.rowNum}}</div>
+        <ul class="right list">
+            {{include "childTemplate" item}}
+        </ul>
+    </li>
+    {{/each}}</script><script id="childTemplate" type="text/html">{{each children as item}}
+    <li class="item" data-price="{{item.price}}" data-type="{{item.type}}" data-id="{{item.id}}"
+        onclick="selecthandel(this)">
+        {{if item.type==0}}
+        <img src="../images/noSell.png" alt="">
+        {{else if item.type==1}}
+        <img src="../images/hasSell.png" alt="">
+        {{else if item.type==2}}
+        <img src="../images/hasBook.png" alt="">
+        {{/if}}
+        <p>{{item.name}}</p>
+    </li>
+    {{/each}}</script></body><script src="../vendor/zepto/zepto.min.js"></script><script src="../vendor/template/template.js"></script><script src="../js/common.js"></script><script src="../js/select.js"></script></html>
